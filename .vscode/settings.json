@@ -1,10 +1,17 @@
 {
+  // Auto-save whenever you switch windows
   "files.autoSave": "onFocusChange",
+
+  // Cleaner editor look
   "editor.minimap.enabled": false,
   "editor.wrappingIndent": "indent",
   "editor.overviewRulerBorder": false,
   "editor.lineHeight": 24,
+
+  // Foam setting: makes [[wikilinks]] clickable on GitHub by adding link refs
   "foam.edit.linkReferenceDefinitions": "withExtensions",
+
+  // Better markdown editing experience
   "[markdown]": {
     "editor.quickSuggestions": {
       "other": true,
@@ -12,11 +19,21 @@
       "strings": false
     }
   },
+
+  // Git settings: quick commit + push
   "git.enableSmartCommit": true,
   "git.postCommitCommand": "sync",
+
+  // Hide build output folder if you use GitHub Pages
   "files.exclude": {
     "_site/**": true
   },
-  "files.insertFinalNewline": true,
-  "markdown.styles": [".vscode/custom-tag-style.css"]
+
+  // Style tweaks (optional, lets you customize how tags look)
+  "markdown.styles": [
+    ".vscode/custom-tag-style.css"
+  ],
+
+  // Ensure files always end with a newline (nice for Git diffs)
+  "files.insertFinalNewline": true
 }
