@@ -7,7 +7,7 @@ Use the links below to navigate quickly to each course.
 ---
 ## 📚 Courses
 - [[classes/CP322/week1]] – *Machine Learning*
-- [[classes/CP372/week1]] – *Compilers*
+- [[Week2]] – *Compilers*
 - [[classes/CP386/week1]] – *Operating Systems*
 - [[classes/CP421/week1]] – *Data Mining*
 - [[classes/CP422/week1]] – *Programming for Big Data*
