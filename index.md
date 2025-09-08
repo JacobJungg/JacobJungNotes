@@ -5,9 +5,6 @@ This site contains my lecture notes, assignments, and study materials.
 Use the links below to navigate quickly to each course.
 
 ---
-
-## 📚 Courses
-
 ## 📚 Courses
 - [[classes/CP322/week1]] – *Machine Learning*
 - [[classes/CP372/week1]] – *Compilers*
@@ -17,12 +14,6 @@ Use the links below to navigate quickly to each course.
 - [[classes/ST259/week1]] – *Probability I*
 ---
 
-## 🗓 Daily Notes
-Use `Foam: Open Daily Note` (`Ctrl + Shift + P`) to create quick daily logs.  
-All daily notes will be stored in `/journal` and automatically linked together.
-
----
-
 ## 🏷 Tags
 Organize and filter notes by tag:  
 #cs #probability #ml #data-mining #os #compilers #review #exam
@@ -30,3 +21,6 @@ Organize and filter notes by tag:
 ---
 
 _Last updated: {{date:YYYY-MM-DD}}_
+
+
+
