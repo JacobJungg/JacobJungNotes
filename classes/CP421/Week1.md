@@ -1,161 +1,126 @@
-# {{Week 1}}
+# Week 1
 
-Date: {{date:2025-09-09}}
-Course: {{CP 421}}
-Tags: #week #lecture
+**Date:** 2025-09-09  
+**Course:** CP 421  
+**Tags:** #week #lecture  
 
 ---
 
 ## 📖 Lecture Summary
-- Acquire
-  - Identify datasets
-  - Retriveve data
-  - Query data
-- Prepare data
-  - Explore
-    - Understand nature of data
-    - Preliminarly analysis
-    - Corelation between data
-    - See trends of data
-    - Duplicate columns and attribute
-    - Understand your data
-  - Pre-process
-    - Clean
-      - - Remove outliers
-      - Null values
-      - Remove rows
-      - Prepare data
-    - Integrate
-    - Package
-    - Depends on what is missing
-      - Merge duplicate records
-      - outliers
-      - Data with missing values
-    - Feature selection
-    - Dimensionality reduction
-      - eg 3D -> 2D
-- Analyze Data
-  - Select analytical tech
-    - Classification
-      - Know or predict the item belongs to which category
-    - Clustering
-      - Organize similrar items into groups
-    - Regression
-      - Predict numeric value
-    - Association analysis
-      - Rules to capture assoications between items
-      - Superstores, what items to put beside what items
-    - Graph Analytics
-      - Graph structures to find connections between entitites
-      - Social network
-      - Spider web
-  - Build models
-  - Select tecnhiq > Build model > Validate model 
-- Communicate results
-  -  Data-driven story telling
-  -  What to report
-  -  How to present
-- Apply results
-  - Determine next steps
-  - Future opportunities
-  - Revisit
-  - Favorable results?
-- What is datamining?
-  - Knowledge discovery from dataGiven lots of Data
-  - Discover patterns and models that are
-    - Valid
-      - Hold new data with some certainty
-    - USeful
-      - Why make if not USeful
-      - SHould be possible to act on
-    - Unexpected
-      - Non obvious to the system
-      - Solve a problem
-    - Undstandable
-      - Humans should be able to interpret the patterns
-##SLIDE TWO
-- Distributed File system
-  - HDFS
-    - H stands for Hadoop
-    - Famous dfs
-  - Long term info storage
-  - Enable access of multiple processes
-    - Parralel processing
-    - Sub tasks same time
-    - Give multiple access to itself
-  - Not only for storing data
-  - Processes data
-  - Storage
-    - Racks of nodes
-    - One area
-    - All of thema re connected with eachother
-    - Store different chunks on different Racks
-    - Need duplication of chunks
-    - Store duplicate value on different racks as well
-    - Never put same duplicate on same rack or same place
-    - First divide into chunks, then make duplicate
-    - If smth goes wrong, for example one of the racks has been dissconected, then you have access t all data on different chunks
-  - Data partiononing
-  - Data replication
-  - Data Scaability
-  - Fault tollerance
-  - High concurrency
-  - Example: Google
-    - 20 Billion Web pages
-    - Avg size of webpage 20kb (not actual number)
-    - 20 billion X 20 kb = 400+ TB
-    - If we want to search through this data, 1 computer reads 30-35 mb a second
-      - 4 months
-      - but google does it in miliseconds?
-- Single Node Architecture
-  - In a pc we have CPU and Memory
-    - Consider 1 pc as 1 node in file system 
-  - If we have a hard disk, we can store a chunk of data on disk
-  - When we need we call disk and move data to processing
-  - Move into memory and then apply the processing on data on memory
-  - Classocal data mining
-    - yap yap yap
-    - This class whenever we want to do any example we will do it as a classical data mining
-    - No server
-    - No cloud
-    - We just going to work on disk
-    - Yeah idk what this guy is talking about i think just no 3rd party stuff so think of it as zero Build
-- Cluster Architecture
-  - Multiple ProcessesGbps between any pair of nodes in a rack
-  - Chunks are stored on different nodes
-  - We need a switch to recive data from one node to another
-  - Stops bottlenecking
-  - This is a big thing
-- Commodity Cluster
-  - "Distributed computing"
-    - Over the Internet
-  - Enables data-parralellism
-  - Reduces computing cost
-  - Network bottleneck
-    - Other than storing files multiple times for reliability
-    - Birng consumption close to the data
-- Fault tollerance
-  - Common Failures
-    - Node failure
-      - Single rack fails
-    - Link failure
-      - Connection from Netowrk to the rack fails
-    - Rack failure
-      - whole rack fails
-    - Two-node connection failure
-      - Link between two nodes fails
-      - Like the wires or smth
-  - Failure does not mean full restart
-    - Potential for node-level system Failures
-    - Redudant data storage
-    - Data-parallel job restart
-- Programming on top of distributed file systems
-  - Split volumes of data
-  - Access data fast
-  - Distribute computations to nodes
+
+### 📥 Acquire Data
+- Identify datasets  
+- Retrieve data from sources  
+- Query data for relevant attributes  
+
+### 🧹 Prepare Data
+- **Explore**
+  - Understand nature of data (data types, ranges)
+  - Preliminary analysis and descriptive statistics
+  - Detect correlations, trends, and distributions
+  - Identify duplicate columns and attributes
+- **Pre-process**
+  - **Clean**
+    - Remove outliers  
+    - Handle null values  
+    - Remove or impute incomplete rows  
+  - **Integrate** data from multiple sources  
+  - **Package** for modeling  
+  - Handle missing data intelligently (merge duplicates, decide on imputation strategy)
+  - **Feature Selection** (choose most relevant attributes)
+  - **Dimensionality Reduction** (e.g., project 3D → 2D using PCA)
+
+### 📊 Analyze Data
+- **Select Analytical Techniques**
+  - **Classification** – predict category membership  
+  - **Clustering** – group similar items together  
+  - **Regression** – predict numerical values  
+  - **Association Analysis** – find relationships (e.g., market basket analysis)  
+  - **Graph Analytics** – find connections between entities (social networks, link analysis)
+- **Build Models**
+  - Select technique → Build model → Validate model  
+
+### 🗣 Communicate Results
+- Data-driven storytelling  
+- Decide **what** to report and **how** to present it effectively  
+
+### 🔁 Apply Results
+- Recommend next steps  
+- Identify future opportunities  
+- Revisit process if necessary  
+- Determine whether results are favorable  
+
+### ❓ What is Data Mining?
+- **Definition:** Knowledge discovery from large volumes of data  
+- **Goal:** Discover patterns and models that are:
+  - **Valid** – Generalize to new data  
+  - **Useful** – Actionable and relevant  
+  - **Unexpected** – Non-obvious insights  
+  - **Understandable** – Interpretable by humans  
+
+---
+
+## 🖥 Slide Two: Big Data & Distributed Systems
+
+### Distributed File Systems (DFS)
+- **HDFS** (Hadoop Distributed File System)
+  - Long-term information storage
+  - Enables **parallel processing**
+  - Provides access for multiple processes simultaneously  
+- **Key Features**
+  - Data partitioning & replication  
+  - Fault tolerance (replicate chunks on different racks)
+  - High concurrency  
+  - Scalability (handle growing datasets)  
+- **Example:** Google indexing 20B+ web pages (~400TB) and searching them in milliseconds
+
+### Architectures
+- **Single Node**
+  - CPU + Memory in a single machine
+  - Data stored on disk → loaded into memory → processed locally
+  - Classical data mining approach (no distributed/cloud setup)
+
+- **Cluster Architecture**
+  - Multiple nodes connected via network switches
+  - Data chunks stored across nodes
+  - Reduces bottlenecks with parallel data transfer
+  - Foundation of modern big data systems  
+
+- **Commodity Clusters**
+  - Distributed computing over inexpensive hardware
+  - Enables data parallelism and lowers cost
+  - Brings computation close to the data (reduces network traffic)
+
+### Fault Tolerance
+- **Common Failures**
+  - Node failure
+  - Link failure (between node and rack)
+  - Rack failure
+  - Two-node connection failure  
+- **Recovery**
+  - No need for full restart  
+  - Use redundant data storage & restart only failed jobs
+
+### Programming on DFS
+- Split volumes of data  
+- Distribute computations to nodes  
+- Access and process data quickly at scale  
+
+---
 
 ## 🧠 Key Concepts
-- 
+
+- Data Mining Process: Acquire → Prepare → Analyze → Communicate → Apply  
+- Data Cleaning & Integration Techniques  
+- Feature Selection & Dimensionality Reduction  
+- Classification, Clustering, Regression, Association, and Graph Analytics  
+- Distributed File Systems (HDFS), Data Partitioning & Replication  
+- Single Node vs. Cluster Architecture  
+- Fault Tolerance & Redundancy in Big Data Systems  
+- Bringing Computation to Data (Data Parallelism)
+
+---
 
 ## 📝 Notes
-Write your notes here.
+
+Write additional examples here (e.g., PCA use case, association rules in retail).
