@@ -112,6 +112,92 @@ Tags: #week #lecture
 
 ---
 
+
+- Node to node layer
+  - IP Addressing
+    - Routing
+    - Forwarding
+  - Data Link Layer
+    - Node to node
+    - version of transport layer
+      - Error control
+      - Medeium access control
+  - Physical layer
+    - Line coding
+    - Modulation
+- Look into encapsulation and decapsulation
+
+
+
+## Packet Switch
+- In network layer they support two protocols
+- Connection oriented and connection less
+  - Connectionless is datagram
+  - Connection is packet
+- Segmentation, divide
+  - When reach destination combine everything
+- Assembly and reassembly process
+  - Send one message
+  - Segment into multiple packets
+  - Each packet is stored at each node
+  - Forwarded to the next until destination
+  - Recieve the packet
+  - Reassemble
+  - Recieve the message
+- PSTN
+  - Public switch telephone network
+  - Circuit establishmetn
+  - Data transfer
+  - Circuit disconnect
+- Circuit switching vs packet switch
+  - Circuit was originally to handle voice traffic but also digital data, this was inefficent
+  - Inefficent Connectionless
+  - Channel capacity dedicated for duration of connection
+    - Even if no data being transfered
+  - Even for voice utilization is high but not 100% (idk what 100% means)
+  - Data connection (client server) capacity idle during most of connection
+  - Circuit does not accept bursty traffic
+    - Calls can be blocked
+    - In packet swithcing it still accepts but deilvery delay increases
+  - Packet supports fairness of packets 
+    - Fairness to user
+  - PAcket switch has delay
+    - aloways looking for faster Speed
+    - to minimize delay
+    - Queing delay
+      - Packets arrivie at a busy link, must queue up
+      - Wait their turn
+      - before being sent to link
+    - Packet loss
+      - If queue is full packet is dropped
+    - These two only happen if links are not reserved
+    - PAcket processing delay
+      - EAch packet must have a destination address
+      - EAch router must check to direct it to suitable next router
+    - Packet transmission delay
+      - PAcket must be fully placed at link for transmission
+    - Transmission delay
+      - Time taken to put all bits of a packet onto the link
+      - Li = Size of packet (number of bits)
+      - R = Link rate (bps)(# of bits per second)
+      - dtrans = Li/R
+      - this is a formula put it in key Notes
+    - Propogation delay
+      - Time it takes for head of packet to travel from sender to receiversl = length of phtiscal link (dist between two devices)
+      - s = propagation speed (2x10^8m/s)
+      - dprop = l/s
+        - Distance / Speed
+
+- processing delay in router
+- queing delay waiting on router or smth how long waiting in que
+- send packet to line, transmission delay
+  - from sending que to line
+  - L/R
+- propogration delay
+  - l/s
+- dnode = dproc + dque + dtrans + dprop
+- Remeber all four of five of these and the equations
+
 ### 📚 Chapter Coverage
 - Covers **Ch. 1.1 – 1.3**
 
