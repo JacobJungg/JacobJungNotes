@@ -82,6 +82,10 @@ Tags: #week1 #lecture1
 - **Other Factors:** Exogenous variables like weather, accidents, road rage, time of day  
 
 ---
+- 
+
+
+
 
 ## 🧠 Key Concepts
 - 4 Vs (Volume, Variety, Velocity, Value)
