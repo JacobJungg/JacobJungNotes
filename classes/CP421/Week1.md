@@ -1,0 +1,161 @@
+# {{Week 1}}
+
+Date: {{date:2025-09-09}}
+Course: {{CP 421}}
+Tags: #week #lecture
+
+---
+
+## 📖 Lecture Summary
+- Acquire
+  - Identify datasets
+  - Retriveve data
+  - Query data
+- Prepare data
+  - Explore
+    - Understand nature of data
+    - Preliminarly analysis
+    - Corelation between data
+    - See trends of data
+    - Duplicate columns and attribute
+    - Understand your data
+  - Pre-process
+    - Clean
+      - - Remove outliers
+      - Null values
+      - Remove rows
+      - Prepare data
+    - Integrate
+    - Package
+    - Depends on what is missing
+      - Merge duplicate records
+      - outliers
+      - Data with missing values
+    - Feature selection
+    - Dimensionality reduction
+      - eg 3D -> 2D
+- Analyze Data
+  - Select analytical tech
+    - Classification
+      - Know or predict the item belongs to which category
+    - Clustering
+      - Organize similrar items into groups
+    - Regression
+      - Predict numeric value
+    - Association analysis
+      - Rules to capture assoications between items
+      - Superstores, what items to put beside what items
+    - Graph Analytics
+      - Graph structures to find connections between entitites
+      - Social network
+      - Spider web
+  - Build models
+  - Select tecnhiq > Build model > Validate model 
+- Communicate results
+  -  Data-driven story telling
+  -  What to report
+  -  How to present
+- Apply results
+  - Determine next steps
+  - Future opportunities
+  - Revisit
+  - Favorable results?
+- What is datamining?
+  - Knowledge discovery from dataGiven lots of Data
+  - Discover patterns and models that are
+    - Valid
+      - Hold new data with some certainty
+    - USeful
+      - Why make if not USeful
+      - SHould be possible to act on
+    - Unexpected
+      - Non obvious to the system
+      - Solve a problem
+    - Undstandable
+      - Humans should be able to interpret the patterns
+##SLIDE TWO
+- Distributed File system
+  - HDFS
+    - H stands for Hadoop
+    - Famous dfs
+  - Long term info storage
+  - Enable access of multiple processes
+    - Parralel processing
+    - Sub tasks same time
+    - Give multiple access to itself
+  - Not only for storing data
+  - Processes data
+  - Storage
+    - Racks of nodes
+    - One area
+    - All of thema re connected with eachother
+    - Store different chunks on different Racks
+    - Need duplication of chunks
+    - Store duplicate value on different racks as well
+    - Never put same duplicate on same rack or same place
+    - First divide into chunks, then make duplicate
+    - If smth goes wrong, for example one of the racks has been dissconected, then you have access t all data on different chunks
+  - Data partiononing
+  - Data replication
+  - Data Scaability
+  - Fault tollerance
+  - High concurrency
+  - Example: Google
+    - 20 Billion Web pages
+    - Avg size of webpage 20kb (not actual number)
+    - 20 billion X 20 kb = 400+ TB
+    - If we want to search through this data, 1 computer reads 30-35 mb a second
+      - 4 months
+      - but google does it in miliseconds?
+- Single Node Architecture
+  - In a pc we have CPU and Memory
+    - Consider 1 pc as 1 node in file system 
+  - If we have a hard disk, we can store a chunk of data on disk
+  - When we need we call disk and move data to processing
+  - Move into memory and then apply the processing on data on memory
+  - Classocal data mining
+    - yap yap yap
+    - This class whenever we want to do any example we will do it as a classical data mining
+    - No server
+    - No cloud
+    - We just going to work on disk
+    - Yeah idk what this guy is talking about i think just no 3rd party stuff so think of it as zero Build
+- Cluster Architecture
+  - Multiple ProcessesGbps between any pair of nodes in a rack
+  - Chunks are stored on different nodes
+  - We need a switch to recive data from one node to another
+  - Stops bottlenecking
+  - This is a big thing
+- Commodity Cluster
+  - "Distributed computing"
+    - Over the Internet
+  - Enables data-parralellism
+  - Reduces computing cost
+  - Network bottleneck
+    - Other than storing files multiple times for reliability
+    - Birng consumption close to the data
+- Fault tollerance
+  - Common Failures
+    - Node failure
+      - Single rack fails
+    - Link failure
+      - Connection from Netowrk to the rack fails
+    - Rack failure
+      - whole rack fails
+    - Two-node connection failure
+      - Link between two nodes fails
+      - Like the wires or smth
+  - Failure does not mean full restart
+    - Potential for node-level system Failures
+    - Redudant data storage
+    - Data-parallel job restart
+- Programming on top of distributed file systems
+  - Split volumes of data
+  - Access data fast
+  - Distribute computations to nodes
+
+## 🧠 Key Concepts
+- 
+
+## 📝 Notes
+Write your notes here.
