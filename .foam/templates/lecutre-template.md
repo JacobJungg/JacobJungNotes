@@ -5,12 +5,9 @@ Course: {{FOAM_SELECTION}}
 Tags: #week #lecture
 
 ---
+## 🧠 Key Concepts
+- 
 
 ## 📖 Lecture Summary
 - 
 
-## 🧠 Key Concepts
-- 
-
-## 📝 Notes
-Write your notes here.
